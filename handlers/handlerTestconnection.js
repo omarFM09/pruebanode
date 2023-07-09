@@ -1,7 +1,10 @@
 'use strict';
-
+const swaggerUI = require("swagger-ui-express")
+const openApiConfiguration = require("../docs/swagger")
 const pool = require('../connection')
-
+/**
+ * 
+ */
 module.exports.Testconnection = (event, context, callback) => {
   context.callbackWaitsForEmptyEventLoop = false;
   const sql = "SELECT * FROM planetas";
