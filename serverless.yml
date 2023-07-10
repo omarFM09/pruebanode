@@ -34,6 +34,18 @@ functions:
       - httpApi:
           path: /connection/Testcreate
           method: post
+  #{
+  #  "clima": "Tropical1",
+  #  "diametro": "1001",
+  #  "gravedad": "2estandar",
+  #  "nombre": "tierra1",
+  #  "periodo_orbital": "304",
+  #  "poblacion": 10001,
+  #  "periodo_rotacion": "23",
+  #  "superficie_agua": "1151",
+  #  "terreno": "rocoso1",
+  #  "url": "url_link1"
+  #}
 
   # Realizamos una actualización de datos a una fila creada en nuestra tabla
   Testupdate:
@@ -42,6 +54,19 @@ functions:
       - httpApi:
           path: /connection/Testupdate/{id}
           method: put
+  #https://1ngvw9od1k.execute-api.us-east-1.amazonaws.com/connection/Testupdate/6
+  #{
+  #  "clima": "Tropical1",
+  #  "diametro": "1001",
+  #  "gravedad": "2estandar",
+  #  "nombre": "tierra1",
+  #  "periodo_orbital": "304",
+  #  "poblacion": 10001,
+  #  "periodo_rotacion": "23",
+  #  "superficie_agua": "1151",
+  #  "terreno": "rocoso1",
+  #  "url": "url_link1"
+  #}
 
   # Realizamos una eliminación a un registro en específico de nuestra tabla
   Testdelete:
@@ -50,6 +75,7 @@ functions:
       - httpApi:
           path: /connection/Testdelete/{id}
           method: delete
+  #https://1ngvw9od1k.execute-api.us-east-1.amazonaws.com/connection/Testdelete/6
 
   # Realizamos un select a un registro en específico de nuestra tabla
   Testselect:
@@ -58,3 +84,4 @@ functions:
       - httpApi:
           path: /connection/Testselect/{id}
           method: get
+  #https://1ngvw9od1k.execute-api.us-east-1.amazonaws.com/connection/Testselect/4
